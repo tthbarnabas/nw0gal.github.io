@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üdvözöllek az oldalon!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #2a7ac9;
+            color: white;
+        }
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .gallery-item {
+            margin: 15px;
+            text-align: center;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        .caption {
+            margin-top: 10px;
+            font-size: 16px;
+            color: white;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .external-link {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.2s;
+        }
+        .external-link:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tv show és játék</h1>
+    </header>
+    <main>
+        <section class="gallery">
+            <!-- Kép 1: Link az oldal1.html-hez -->
+            <div class="gallery-item">
+                <a href="oldal1.html">
+                    <img src="C:\Users\Barnabás\OneDrive - University of Miskolc\Prog 2024,25\html beadandó\képek\viktor.jpg" alt="Ember 1">
+                    <div class="caption">Viktor</div>
+                </a>
+            </div>
+            <!-- Kép 2: Link az oldal2.html-hez -->
+            <div class="gallery-item">
+                <a href="oldal2.html">
+                    <img src="C:\Users\Barnabás\OneDrive - University of Miskolc\Prog 2024,25\html beadandó\képek\vander.jpg" alt="Ember 2">
+                    <div class="caption">Vander</div>
+                </a>
+            </div>
+            <!-- Kép 3: Link az oldal3.html-hez -->
+            <div class="gallery-item">
+                <a href="oldal3.html">
+                    <img src="C:\Users\Barnabás\OneDrive - University of Miskolc\Prog 2024,25\html beadandó\képek\silco.jpg" alt="Ember 3">
+                    <div class="caption">Silco</div>
+                </a>
+            </div>
+            <!-- Kép 4: Link az oldal4.html-hez -->
+            <div class="gallery-item">
+                <a href="oldal4.html">
+                    <img src="C:\Users\Barnabás\OneDrive - University of Miskolc\Prog 2024,25\html beadandó\képek\jinx.jpg" alt="Ember 4">
+                    <div class="caption">Jinx</div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Külső weboldal link -->
+        <section>
+            <a href="https://www.riotgames.com/" target="_blank" class="external-link">
+                Riot Games hivatalos oldala!
+            </a>
+        </section>
+    </main>
+</body>
+</html>
